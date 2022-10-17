@@ -88,6 +88,22 @@ namespace quickshort
 
                 q_sort(j + 1, high);
             }
+            void display()
+            {
+                Console.WriteLine("\n=====================");
+                Console.WriteLine(" sorted array elements ");
+                Console.WriteLine("\n====-================");
+                for(int j = 0; j < n; j++)
+                {
+                    Console.WriteLine(arr[j]);
+                }
+                Console.WriteLine("\n number of comparisons :" + cmp_count);
+                Console.WriteLine("\n number of data movements : " + mov_count);
+            }
+            int getsize()
+            {
+                return (n);
+            }
         }
 
 
